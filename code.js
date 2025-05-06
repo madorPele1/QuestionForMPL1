@@ -10,7 +10,8 @@ window.addEventListener("load", () => {
             document.getElementById(`category${i}`).addEventListener('click',SubjectClicked);
         }
 
-        document.getElementById(`search-area`).addEventListener('input', FilterCategorys);
+        document.getElementById(`magnify-glass`).addEventListener('click', FilterCategorys);
+        document.getElementById(`search-area`).addEventListener('input', BackCategorys);
    }
    
    if(sessionStorage.getItem("page")=== "2"){
@@ -61,22 +62,19 @@ const BackHome = () =>{
 const FilterCategorys = () =>{
     wantedCategory =  document.getElementById(`search-area`).value;
     for (let i = 0; i < categorys.length; i++) {
-        let flag = "true";
-
-        for(let i = 0; i < wantedCategory.length; i++){
-            if(categorys[i] !== wantedCategory[i]){
-               document.getElementById(`category${i+2}`).style.display = "none";
-            }
+        if(categorys[i] !== wantedCategory){
+            document.getElementById(`category${i+2}`).style.display = "none";
         }
-
-        if(flag === "false"){
-            // document.getElementById(`category${i+2}`).style.display = "none";
-            console.log(document.getElementById(`category${i+2}`));
-        }
-        
     }
 }
 
+const BackCategorys = () =>{
+    if(document.getElementById(`search-area`).value === ""){
+        for (let i = 0; i < categorys.length; i++) {
+            document.getElementById(`category${i+2}`).style.display = "block";
+        }
+    }
+}
 
 
 const openInfo = (event) => {
