@@ -1,0 +1,63 @@
+body{
+    background: url(media/photos/answerquestion-screen/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    direction: rtl;
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: bottom;
+    background-color: #337e97;
+    overflow-y: hidden;
+}
+
+
+#publish-bottom1{
+    position: absolute;
+    font-family: "Heebo";
+    text-align: center;
+    color: #337e97;
+    width: 36vw;
+    height: 8vh;
+    background-color: #fefaee;
+    font-size: 4.5vmax;
+    font-weight: 900;
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+    padding-top: 0.5vh;
+    border-radius: 5vh;
+    top: 53vh;
+    right: 55vw;
+}
+
+#home{
+    position: absolute;
+    width: 4vh;
+    height: 4vh;
+    top: 2vh;
+    right: 2vh;
+}
+
+#answer{
+    position: absolute;
+    width: 86vw;
+    right: 6vw;
+    top: 17vh;
+    height: 32vh;
+    border-radius: 17px;
+    border: none;
+}
+
+#answer-text{
+    position: absolute;
+    color: #fefaee;
+    font-size: 4.1vmax;
+    font-weight: 900;
+    font-family: "Heebo";
+    right: 6vw;
+    top: 9vh;
+}
+
+@font-face {
+    font-family: Heebo;
+    src: url(media/fonts/Heebo-VariableFont_wght.ttf);
+}
