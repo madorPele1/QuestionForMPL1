@@ -1,0 +1,88 @@
+body{
+    background: url(media/photos/askquestion-screen/background2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    direction: rtl;
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: bottom;
+    background-color: #337e97;
+    overflow-y: hidden;
+}
+
+#category-filter{
+    position: absolute;
+    width: 86vw;
+    right: 7vw;
+    top: 15vh;
+    height: 6vh;
+    border-radius: 10px;
+    border: none;
+    font-family: "Heebo";
+    font-size: 6vmin;
+    color: #1d3657;
+    font-weight: 700;
+}
+
+#ask-question{
+    position: absolute;
+    width: 86vw;
+    right: 7vw;
+    top: 33vh;
+    height: 16vh;
+    border-radius: 17px;
+    border: none;
+}
+
+#category-text{
+    position: absolute;
+    font-family: "Heebo";
+    text-align: center;
+    color: #fefaee;
+    font-size: 4.1vmax;
+    font-weight: 900;
+    right: 7vw;
+    top: 7vh;
+}
+
+#qustion-text{
+    position: absolute;
+    font-family: "Heebo";
+    text-align: center;
+    color: #fefaee;
+    font-size: 4.1vmax;
+    font-weight: 900;
+    right: 7vw;
+    top: 25vh;
+}
+
+#publish-bottom{
+    position: absolute;
+    font-family: "Heebo";
+    text-align: center;
+    color: #337e97;
+    width: 36vw;
+    height: 8vh;
+    background-color: #fefaee;
+    font-size: 4.5vmax;
+    font-weight: 900;
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+    padding-top: 0.5vh;
+    border-radius: 5vh;
+    top: 53vh;
+    right: 30vw;
+}
+
+#home{
+    position: absolute;
+    width: 4vh;
+    height: 4vh;
+    top: 2vh;
+    right: 2vh;
+}
+
+@font-face {
+    font-family: Heebo;
+    src: url(media/fonts/Heebo-VariableFont_wght.ttf);
+}
