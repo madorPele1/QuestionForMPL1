@@ -55,7 +55,7 @@ body{
     right: 16vw;
 }
 
-#choose{
+#choose1{
     position: absolute;
     width: 40vw;
     height:3vh;
@@ -63,6 +63,16 @@ body{
     background-color: #ffffff6f;
     border-radius: 4vw;
     right: 2vw;
+}
+
+#choose2{
+    position: absolute;
+    width: 40vw;
+    height:3vh;
+    top: 1.4vw;
+    background-color: #ffffff6f;
+    border-radius: 4vw;
+    right:42vw;
 }
 
 .second-info {
@@ -211,6 +221,17 @@ body{
     top:-19vh;
     right:85%;
 }
+
+#question-with-noanswer{
+    display: none;
+}
+
+
+#question-with-answer{
+    display: block;
+}
+
+
 
 @font-face {
     font-family: Heebo;
