@@ -5,25 +5,30 @@ let categorys = [`תכנות`,`גרפיקה`,'פה"מ', 'עבודה עם לקו�
 
 window.addEventListener("load", () => {
    if(sessionStorage.getItem("page") === null || sessionStorage.getItem("page")=== "1"){
-    sessionStorage.setItem("page", "1");
-        for (let i = 1; i < 7; i++) {
-            document.getElementById(`category${i}`).addEventListener('click',SubjectClicked);
-        }
+        sessionStorage.setItem("page", "1");
+        document.getElementById(`category1`).addEventListener('click',AskQuestion);
+            for (let i = 2; i < 7; i++) {
+                document.getElementById(`category${i}`).addEventListener('click',SubjectClicked);
+            }
 
-        document.getElementById(`magnify-glass`).addEventListener('click', FilterCategorys);
-        document.getElementById(`search-area`).addEventListener('input', BackCategorys);
+            document.getElementById(`magnify-glass`).addEventListener('click', FilterCategorys);
+            document.getElementById(`search-area`).addEventListener('input', BackCategorys);
    }
    
    if(sessionStorage.getItem("page")=== "2"){
-    console.log(sessionStorage.getItem("category"));
-    document.getElementById("home").addEventListener('click',BackHome);
-    document.getElementById("category-title").innerText = sessionStorage.getItem("category");
+        console.log(sessionStorage.getItem("category"));
+        document.getElementById("home").addEventListener('click',BackHome);
+        document.getElementById("category-title").innerText = sessionStorage.getItem("category");
 
-       infos = document.querySelectorAll('.info-div');
-    for (let i=1; i<=3; i++) {
-        document.getElementById(`call${i}`).addEventListener("click", openInfo);
-    };
-    clicked = 0;
+        infos = document.querySelectorAll('.info-div');
+        for (let i=1; i<=3; i++) {
+            document.getElementById(`call${i}`).addEventListener("click", openInfo);
+        };
+        clicked = 0;
+   }
+
+   if(sessionStorage.getItem("page") === "3"){
+        document.getElementById("home").addEventListener('click',BackHome);
    }
 
 });
@@ -57,6 +62,11 @@ const SubjectClicked = (event) =>{
 const BackHome = () =>{
     sessionStorage.setItem("page", "1");
     window.location.href = "index1.html";
+}
+
+const AskQuestion = () =>{
+    sessionStorage.setItem("page", "3");
+    window.location.href = "index3.html";
 }
 
 const FilterCategorys = () =>{
