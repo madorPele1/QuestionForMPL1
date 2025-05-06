@@ -18,6 +18,8 @@ window.addEventListener("load", () => {
    if(sessionStorage.getItem("page")=== "2"){
         console.log(sessionStorage.getItem("category"));
         document.getElementById("home").addEventListener('click',BackHome);
+        document.getElementById("filter-noanswer").addEventListener('click',AnswerVSNotAnswer);
+        document.getElementById("filter-answer").addEventListener('click',AnswerVSNotAnswer);
         document.getElementById("category-title").innerText = sessionStorage.getItem("category");
 
         infos = document.querySelectorAll('.info-div');
@@ -87,6 +89,18 @@ const BackCategorys = () =>{
 }
 
 
+const AnswerVSNotAnswer = (event) =>{
+    console.log(event.target.id);
+    if(event.target.id === "filter-noanswer"){
+        document.getElementById(`question-with-answer`).style.display = "none";
+        document.getElementById(`question-with-noanswer`).style.display = "block";
+    } else{
+        document.getElementById(`question-with-noanswer`).style.display = "none";
+        document.getElementById(`question-with-answer`).style.display = "block";
+    }
+}
+
+
 const openInfo = (event) => {
     for (let i=1; i<=3; i++) {
         document.getElementById(`info${i}`).style.height = "0vh";
@@ -107,3 +121,4 @@ const openInfo = (event) => {
     
     }
 }
+
