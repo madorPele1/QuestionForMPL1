@@ -55,6 +55,20 @@ body{
     right: 16vw;
 }
 
+#filter-noanswer1{
+    position: absolute;
+    right: 53vw;
+    top: 0.6vw;
+}
+
+
+#filter-answer1{
+    position: absolute;
+    top: 0.6vw;
+    right: 16vw;
+}
+
+
 #choose1{
     position: absolute;
     width: 40vw;
