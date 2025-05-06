@@ -1,0 +1,218 @@
+body{
+    background: url(media/photos/question-screen/background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    direction: rtl;
+}
+
+#home{
+    position: absolute;
+    width: 4vh;
+    height: 4vh;
+    top: 2vh;
+    right: 2vh;
+}
+
+#category-title{
+    position: absolute;
+    font-family: "Heebo";
+    text-align: center;
+    color: white;
+    font-size: 4vmax;
+    font-weight: 900;
+    right: 23.4vw;
+    top: 4vh;
+}
+
+#filter-background{
+    position: absolute;
+    background-color: #2d7c98;
+    width: 86vw;
+    height: 4.5vh;
+    border-radius: 4vw;
+    right: 6vw;
+    top: 11.5vh;
+}
+
+.text-filter{
+    color: white;
+    font-family: "Heebo";
+    font-weight: 800;
+    font-size: 2.5vmax;
+    
+}
+
+#filter-noanswer{
+    position: absolute;
+    right: 53vw;
+    top: 0.6vw;
+}
+
+
+#filter-answer{
+    position: absolute;
+    top: 0.6vw;
+    right: 16vw;
+}
+
+#choose{
+    position: absolute;
+    width: 40vw;
+    height:3vh;
+    top: 1.4vw;
+    background-color: #ffffff6f;
+    border-radius: 4vw;
+    right: 2vw;
+}
+
+.second-info {
+    width: 88vw;
+    position: absolute;
+    right: 5vw;
+    border-radius: 5vw;
+    font-size: 1.8vmax;
+    top: 28vh;
+    color: white;
+    font-family: "Heebo";
+}
+
+.call-title {
+    height: 10vh;
+    color: white;
+    padding-right: 2vw;
+    font-weight: 600;
+}
+
+.spec-call {
+    padding-top: 2vh;
+    padding-bottom: 0vh;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all .5s;
+    margin-top:2vh;
+    border-radius: 5vw;
+    background-color: #337e97;
+
+}
+
+.name-info {
+    padding-bottom: 2vh;
+    position: relative;
+    bottom: 0.5vh;
+    padding-right: 2vw;
+    font-size: 2.2vmax;
+    
+}
+
+.spec-call:hover {
+    background-color: #337e97;
+    cursor: pointer;
+}
+
+#call1{
+    background-color: #337e97;
+}
+
+.info-div {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: clip;
+    margin-top: 1vh;
+    background-color: #337e97;
+    width: 100%;
+    height: 100%;
+}
+
+.info-div p {
+    position: relative;
+    right: 2%;
+    bottom: 10%;
+}
+
+.info-text2 {
+    position: relative;
+    margin: 0;
+    transform: translateY(-1vh);
+    font-size: 1.6vmax;
+}
+
+.info-text1 {
+    font-weight: bold;
+    font-size: 1.7vmax;
+    
+}
+
+.info-div {
+    height: 0;
+    transition: all .4s;
+    /* animation: info-open .5s forwards; */
+}
+
+@keyframes info-open {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 11.5svh;
+    }
+}
+
+.first-call {
+    border-radius: 5vw;
+    background-color: #337e97;
+}
+
+.search-div {
+    width: 25%;
+    position: relative;
+    right: 72%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1.5vh;
+}
+
+.search-img {
+    height: 2vh;
+}
+
+#info3 {
+    border-bottom-right-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+}
+
+#info2 {
+    border-bottom-right-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+}
+
+#info1{
+    border-bottom-right-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+}
+
+.aroow-down{
+    background: url(media/photos/question-screen/down-aroow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 6vw;
+    height: 2vh;
+    top:-7vh;
+    right:85%;
+}
+
+.aroow-up{
+    background: url(media/photos/question-screen/up-aroow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 6vw;
+    height: 2vh;
+    top:-19vh;
+    right:85%;
+}
+
+@font-face {
+    font-family: Heebo;
+    src: url(media/fonts/Heebo-VariableFont_wght.ttf);
+}

@@ -1,0 +1,128 @@
+body{
+    background: url(media/photos/open-screen/background1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fefaee;
+    direction: rtl;
+}
+#search-box{
+    position: absolute;
+    top: 22vh;
+    right: 19vw;
+  
+}
+
+#search-area{
+   font-family: "Heebo";
+   font-size: 5.5vmin;
+   position: absolute;
+   border: none;
+   border-radius: 12px;
+   width:35vw;
+   height: 8vh;
+   top: 2vh;
+   right: 18vw;
+}
+
+#magnify-glass{
+    position: absolute;
+    width:13vw;
+    height: 5vh;
+    top: 3.5vh;
+    right: 2vw;
+}
+
+#box-background{
+    position: absolute;
+    width:58vw;
+    height: 12vh;
+    background-color: #f2f0f0;
+    border-radius: 20px;
+    box-shadow: -3px 8px 4px -2px rgba(0,0,0,0.1);
+}
+
+#title1{
+    position: absolute;
+    font-family:"Heebo" ;
+    font-weight: 900;
+    width:55vw;
+    height: 12vh;
+    color: white;
+    font-size: 3.8vmax;
+    top: 6.5vh;
+    right: 5vw;
+    line-height: 1.2;
+}
+
+#categories-container{
+    position: absolute;
+    display: flex;
+    font-family:"Heebo" ;
+    font-weight: 600;
+    width:95vw;
+    height: 50vh;
+    flex-flow: row wrap;
+    right: 3vw;
+    top:38vh;
+
+}
+
+#category1{
+    background-color: #6cc6e8;
+    display: block;
+}
+
+#category2{
+    background-color: #3a9ec2;
+    padding-top: 4vh;
+    height:9.5vh;
+    display: block;
+}
+
+#category3{
+    background-color: #337e97;
+    padding-top: 4vh;
+    height:9.5vh;
+    display: block;
+}
+#category4{
+    background-color: #6cc6e8;
+    padding-top: 4vh;
+    height:9.5vh;
+    display: block;
+}
+#category5{
+    background-color: #3a9ec2;
+    display: block;
+}
+
+#category6{
+    background-color: #337e97;
+    padding-top: 4vh;
+    height:9.5vh;
+    display: block;
+}
+
+#add{
+    position: absolute;
+    width: 3vh;
+    height: 2.5vh;
+    right: 3vw;
+}
+
+.category{
+    width:36vw;
+    height: 12vh;
+    margin: 1vh;
+    background-color: #1d02b7;
+    color: white;
+    border-radius:20px;
+    text-align: center;
+    font-size: 8vmin;
+    padding: 3vw;
+}
+
+@font-face {
+    font-family: Heebo;
+    src: url(media/fonts/Heebo-VariableFont_wght.ttf);
+}
