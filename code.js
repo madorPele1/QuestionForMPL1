@@ -20,6 +20,8 @@ window.addEventListener("load", () => {
         document.getElementById("home").addEventListener('click',BackHome);
         document.getElementById("filter-noanswer").addEventListener('click',AnswerVSNotAnswer);
         document.getElementById("filter-answer").addEventListener('click',AnswerVSNotAnswer);
+        document.getElementById("filter-noanswer1").addEventListener('click',AnswerVSNotAnswer);
+        document.getElementById("filter-answer1").addEventListener('click',AnswerVSNotAnswer);
         document.getElementById("category-title").innerText = sessionStorage.getItem("category");
 
         infos = document.querySelectorAll('.info-div');
